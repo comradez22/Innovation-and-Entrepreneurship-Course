@@ -6,6 +6,7 @@
 
 
 import sm2.py
+import sm3.py
 def hashmul(hash): 
     for i in hash:
         x = int(sm3.sm3_hash((i)), 16)
