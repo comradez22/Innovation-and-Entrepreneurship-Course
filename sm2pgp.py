@@ -5,8 +5,8 @@
 
 
 import random
-import sm2.py
-import sm2ecmh.py
+import sm2
+import sm2ecmh
 def encode(mes,key):
     cipher1 = encrypt(mes.encode('utf-8'),key)
     bintext = key.encode('utf-8')
