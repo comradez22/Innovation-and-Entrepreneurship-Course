@@ -1,5 +1,5 @@
 from hashlib import sha256
-import sm2.py
+import sm2
 
 def hash_message(message):
 
