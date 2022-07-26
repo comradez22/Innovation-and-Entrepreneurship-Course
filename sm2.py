@@ -9,12 +9,12 @@ from gmssl import sm3, func
 
 
 
-def pointpls(P, Q, a, p):  # 椭圆曲线上的加法
-    if (math.isinf(P[0]) or math.isinf(P[1])) and (~math.isinf(Q[0]) and ~math.isinf(Q[1])):  # OP = P
+def pointpls(P, Q, a, p):  
+    if (math.isinf(P[0]) or math.isinf(P[1])) and (~math.isinf(Q[0]) and ~math.isinf(Q[1])): 
         R = Q
-    elif (~math.isinf(P[0]) and ~math.isinf(P[1])) and (math.isinf(Q[0]) or math.isinf(Q[1])):  # PO = P
+    elif (~math.isinf(P[0]) and ~math.isinf(P[1])) and (math.isinf(Q[0]) or math.isinf(Q[1])):  
         R = P
-    elif (math.isinf(P[0]) or math.isinf(P[1])) and (math.isinf(Q[0]) or math.isinf(Q[1])):  # OO = O
+    elif (math.isinf(P[0]) or math.isinf(P[1])) and (math.isinf(Q[0]) or math.isinf(Q[1])):  
         R = [float('inf'), float('inf')]
     else:
         if P != Q:
@@ -68,7 +68,7 @@ def modinv(n, d, b):
     return x
 
 
-def key_gen(a, p, n, G):  # SM2密钥对的生成
+def key_gen(a, p, n, G):  
 
     sk = random.randint(1, n - 2)
     pk = pointmul(sk, G, a, p)
