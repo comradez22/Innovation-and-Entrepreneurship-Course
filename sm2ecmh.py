@@ -5,10 +5,7 @@
 
 
 
-import math
-import random
 import sm2
-from gmssl import sm3, func
 
 def hashmul(hash): 
     for i in hash:
