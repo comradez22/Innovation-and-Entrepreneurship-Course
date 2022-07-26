@@ -6,6 +6,7 @@
 
 import random
 import sm2.py
+import sm2ecmh.py
 def encode(mes,key):
     cipher1 = encrypt(mes.encode('utf-8'),key)
     bintext = key.encode('utf-8')
@@ -31,7 +32,7 @@ n = 0xFFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFF7203DF6B21C6052B53BBF40939D54123
 Gx = 0x32C4AE2C1F1981195F9904466A39C9948FE30BBFF2660BE1715A4589334C74C7
 Gy = 0xBC3736A2F4F6779C59BDCEE36B692153D0A9877CC62A474002DF32E52139F0A0
 G = [Gx, Gy]
-[sk, pk] = ECMH_project.key_gen(a, p, n, G)
+[sk, pk] = key_gen(a, p, n, G)
 sk_bytes = hex(sk)[2:]
 pk_bytes = hex(pk[0])[2:] + hex(pk[1])[2:]
 
