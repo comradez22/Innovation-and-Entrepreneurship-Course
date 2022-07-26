@@ -20,7 +20,7 @@ def decode(txt1, txt2):
     getkey = decrypt(txt2)
     print("私钥得到会话密钥：", getkey.decode('utf-8'))
     cpt= AES.new(get_key,mode = AES.MODE_OFB, b'0000000000000000')
-    plain = cpt.decrypt(mes1)
+    plain = cpt.decrypt(txt1)
     print("原消息值", plain.decode('utf-8'))
 
 
