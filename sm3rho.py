@@ -5,7 +5,7 @@
 
 
 import random
-import sm3.py
+import sm3
 def rho():
     list_r_value = []
     for i in range(pow(2,32)):
