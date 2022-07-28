@@ -6,13 +6,14 @@
 
 
 import sm2
+import sm3
 
 def hashmul(hash): 
     for i in hash:
         x = int(sm3.sm3_hash((i)), 16)
-        temp = sm2mod(x ** 2 + a * x + b, p)
-        y = remain(temp, p)
-        value = pointpls(value, x, y, a, p)
+        temp = sm2.sm2mod(x ** 2 + a * x + b, p)
+        y = sm2.remain(temp, p)
+        value = sm2.pointpls(value, x, y, a, p)
     return value
 
 
