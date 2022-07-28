@@ -14,18 +14,18 @@ import SM2
 
 
 
-def MultiSetHash(sett):
+def hashmul(s):
     digest_value = [float("inf"), float("inf")]
-    for i in sett:
+    for i in s:
         x = int(sm3.sm3_hash(func.bytes_to_list(i)), 16)
         temp = SM2.sm2mod(x ** 2 + a * x + b, p)
         y = SM2.Tonelli_Shanks(temp, p)
-        digest_value = SM2.pointpls(digest_value, [x, y], a, p)
-    return digest_value
+        value = SM2.pointpls(value, [x, y], a, p)
+    return value
 
 
 
-def PGP_Encrypt(mes, k):
+def encode(mes, k):
     mode = AES.MODE_OFB
     iv = b'0000000000000000'
     cryptor = AES.new(k.encode('utf-8'), mode, iv)
@@ -36,22 +36,22 @@ def PGP_Encrypt(mes, k):
     else:
         add = 0
     mes = mes + ('\0' * add)
-    ciphertext1 = cryptor.encrypt(mes.encode('utf-8'))
-    plaintext_bytes = k.encode('utf-8')
-    ciphertext2 = sm2_crypt.encrypt(plaintext_bytes)
-    print("会话密钥加密：", ciphertext1)
-    print("会话密钥加密：", ciphertext2)
-    return ciphertext1, ciphertext2
+    text1 = cryptor.encrypt(mes.encode('utf-8'))
+    text = k.encode('utf-8')
+    text2 = sm2_crypt.encrypt(text)
+    print("会话密钥加密：", text1)
+    print("会话密钥加密：", text2)
+    return text1, text2
 
 
-def PGP_Decrypt(mes1, mes2):
+def decode(mes1, mes2):
     mode = AES.MODE_OFB
     iv = b'0000000000000000'
     get_key = sm2_crypt.decrypt(mes2)
     print("会话密钥：", get_key.decode('utf-8'))
     cryptor = AES.new(get_key, mode, iv)
-    plain_text = cryptor.decrypt(mes1)
-    print("原消息值", plain_text.decode('utf-8'))
+    text = cryptor.decrypt(mes1)
+    print("原消息值", text.decode('utf-8'))
 
 
 if __name__ == '__main__':
@@ -71,8 +71,8 @@ if __name__ == '__main__':
     print("消息：", msg)
     k = hex(random.randint(2 ** 127, 2 ** 128))[2:]
     print("会话密钥：", k)
-    result1, result2 = PGP_Encrypt(msg, k)
-    PGP_Decrypt(result1, result2)
+    result1, result2 = encode(msg, k)
+    decode(result1, result2)
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
 
