@@ -48,25 +48,34 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/e
 
 
 项目10:使用SM2实现PGP方案
-
-
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm2pgp
 
 项目11:实现sm22P标志与实网通信
-
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm2%202p
 
 项目12:方案的PoC实施，或通过谷歌进行实现分析
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/google%20password%20checkup
 
 
 项目13:实现真实网络通信的sm22P解密
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm2%202p%20dec
 
 
 项目14:伪造一个签名， 假装你是中本聪
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/satoshi
 
 
 项目15:发送一-个tx在比特币测试网，并解析x数据到 每- -位，更好地写脚本自己
-
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/bitcoin%20tx
 
 项目16:MP研究报告
+
 
 
 项目17:在由你的名字和你的学生ID组成的消息下，找 到一个散列值为“sdu cst 20220610”的键。例如“三战202000460001"
@@ -82,7 +91,10 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/c
 https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/circom_grade
 
 项目20：SM4软件优化
-
 张浩旸
 https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm4_opt
+
+备注：
+
+张浩旸 完成的代码readme文件中图片无法显示，附在对应文件夹中
 
