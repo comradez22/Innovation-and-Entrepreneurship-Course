@@ -18,7 +18,7 @@ Author：张浩旸
 
 运行指南：
 
-1.首先新建一个文件：`mkdir InRange.circom`
+1.首先新建一个文件：`touch InRange.circom && chmod 666 InRange.circom`
 
 文件内容:
 
