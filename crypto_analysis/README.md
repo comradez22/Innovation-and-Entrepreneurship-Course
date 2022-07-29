@@ -26,7 +26,7 @@ Author:张浩旸
 
 https://peter.website/meow-hash-cryptanalysis#differential-cryptanalysis
 
-如何构造对称：
+如何构造指定值：
 
 meow hash中所有的操作都是可逆的，所以给定一个hash output和hash input 我们可以随机取7*128 个Lanes和hash output作为inverse函数的输入，然后倒退回原有的key值，根据文章的讲解我实现了一遍meow-hash，然后对我的名字-学号消息对（已经填充了）：
 
