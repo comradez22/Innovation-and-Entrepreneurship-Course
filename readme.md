@@ -35,15 +35,20 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/blob/main/e
 
 
 项目7:impl sm2与RFC6979
-
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm2
 
 项目8:用概念验证代码验证.上述缺陷
-
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/sm2%20pitfall
 
 项目9:实施上述ECMH计划
+张施珵
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/ecmh
 
 
 项目10:使用SM2实现PGP方案
+
 
 
 项目11:实现sm22P标志与实网通信
