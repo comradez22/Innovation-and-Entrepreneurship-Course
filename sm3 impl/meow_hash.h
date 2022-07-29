@@ -16,3 +16,4 @@ uint32_t Tj1663 = 0x7a879d8a;//常量Tj 16-63的取值
 #define round_shift_left(x,n) x<<n|x>>32-n//向左循环移位
 unsigned long long MODNUM = 4294967296;//2的32次方
 uint32_t SM3_hash_result[8];
+//修改文件名称为sm3.h
