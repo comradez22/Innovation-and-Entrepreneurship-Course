@@ -59,27 +59,3 @@ uint8_t InitKey[128] = { 0x99, 0x25, 0xae, 0xb4, 0x3b, 0x8f, 0xf2, 0xad, 0xb6, 0
 
 
 
-
-对称性：
-
-meow_hash的所有运算有这样的特点：如果输入是对称的，那么输出也必定是对称的
-
-这一点对异或和加法肯定正确，对aesdec来说，有这样的关系：
-
-![image-20220729220925170](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220729220925170.png)
-
-
-
-所以也是正确的，引用一段碰撞攻击的作者的原话：
-
-"The consequence of this is that if our input message consists of 32-byte blocks of the form `abcdefghabcdefghaijklmnhaijklmnh` for some bytes `a` through `m`, then all reads will be symmetrical"
-
-![image-20220729220911513](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220729220911513.png)
-
-然而由于消息填充的存在，第二个消息分组（0，0，length，0）不一定是对称的，如何解决呢？答案是不要消息，用0填充至32字节，这样的话只要key是对称的，hash自然是对称的。这样就得到了对称的hash值
-
-`key="ABCDEFGH" * 16`
-
-`message=""`
-
-`meowhash(key,message)=779e443a6d7a63df779e443a6d7a63df`
