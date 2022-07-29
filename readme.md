@@ -5,7 +5,7 @@
 张浩旸 id：1awrenceYang
 王子睿 id: DemainSDU
 李世纪 id：4govo
-
+张浩旸注： 张浩旸完成的readme文件中图片无法显示，运行截图附在对应文件夹中
 项目完成情况： 完成人 + 链接
 
 项目1:实现精简SM3的naive生日攻击
@@ -99,5 +99,5 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/s
 
 备注：
 
-张浩旸 完成的代码readme文件中图片无法显示，附在对应文件夹中
+
 
