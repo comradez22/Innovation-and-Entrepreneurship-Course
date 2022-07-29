@@ -239,14 +239,14 @@ int main()
 	//-------------------------------------------sm3 hash使用--------------------------------------------------------
 	int length = 24;
 	uint8_t input[3] = {0x61,0x62,0x63};
-	//auto t_a = chrono::high_resolution_clock::now();
-	//for (int i = 0; i < 10000; i++)
-	//{
-	//	sm3(input, length);
-	//}
-	//auto t_b = chrono::high_resolution_clock::now();
-	//cout << chrono::duration_cast<chrono::microseconds>(t_b - t_a).count() << endl;
-	//print_sm3_result();//66C7F0F4 62EEEDD9 D1F2D46B DC10E4E2 4167C487 5CF2F7A2 297DA02B 8F4BA8E0 验证结果正确
+	auto t_a = chrono::high_resolution_clock::now();
+	for (int i = 0; i < 10000; i++)
+	{
+		sm3(input, length);
+	}
+	auto t_b = chrono::high_resolution_clock::now();
+	cout << chrono::duration_cast<chrono::microseconds>(t_b - t_a).count() << endl;
+	print_sm3_result();//66C7F0F4 62EEEDD9 D1F2D46B DC10E4E2 4167C487 5CF2F7A2 297DA02B 8F4BA8E0 验证结果正确
 
 	//-------------------------------------------sm3 hash使用--------------------------------------------------------
 
