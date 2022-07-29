@@ -85,7 +85,7 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/c
 
 项目18:找到某个k下的64字节消息，满足其哈希值是对称的
 张浩旸
-https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/crypto_analysis
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/symmetric
 
 项目19：写一个电路来证明你的英语六级成绩大于 425。a. 你的成绩信息是(cn_ id，年级，年份, sig by_ moe)。这些成绩由教育部作为链上承诺发布。b.当你得到雇主的面试机会时，你可以向他们证明你通过了考试，而不用告诉他们具体的分数。
 
