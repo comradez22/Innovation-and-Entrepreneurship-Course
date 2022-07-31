@@ -1,3 +1,9 @@
+项目14:伪造一个签名， 假装你是中本聪 
+
+完成人：张施珵
+
+运行方法：直接运行main.py即可
+
 ecdsa的签名伪造
 其原理如下：
 <img width="621" alt="截屏2022-07-28 15 11 41" src="https://user-images.githubusercontent.com/108727329/181444040-721f5a93-5c4b-4e71-8ee6-8d4d6cd3560a.png">
