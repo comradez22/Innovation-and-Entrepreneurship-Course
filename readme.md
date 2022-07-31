@@ -33,7 +33,7 @@ https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/tree/main/r
 
 项目6:利用ECDSA在以太坊中应用此演绎技术的报告 
 张施珵
-https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/blob/main/ecdsa.py
+https://github.com/comradez22/Innovation-and-Entrepreneurship-Course/blob/main/ecdsa
 
 
 项目7:impl sm2与RFC6979
