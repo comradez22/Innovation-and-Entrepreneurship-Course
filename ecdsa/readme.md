@@ -1,3 +1,10 @@
+项目6:利用ECDSA在以太坊中应用此演绎技术的报告 
+
+完成人：张施珵
+
+运行方法：直接运行main.py即可
+
+
 椭圆曲线签名：
 
 <img width="978" alt="截屏2022-07-27 13 27 46" src="https://user-images.githubusercontent.com/108727329/181168702-63848d9d-d849-4f40-a27b-14083f4ea44d.png">
